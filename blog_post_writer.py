@@ -69,7 +69,7 @@ blog_writing_task = Task(
     expected_output="A markdown-formatted blog post",
     agent=blog_writer,
     tools=[tool],
-    output_file='./artifects/blog-post.md'
+    output_file='./artifacts/blog-post.md'
 )
 
 linkedin_post_task = Task(
@@ -77,7 +77,7 @@ linkedin_post_task = Task(
     expected_output="A markdown-formatted LinkedIn post",
     agent=linkedin_post_agent,
     tools=[tool],
-    output_file='./artifects/linkedin-post.md'
+    output_file='./artifacts/linkedin-post.md'
 )
 
 # Create Crew

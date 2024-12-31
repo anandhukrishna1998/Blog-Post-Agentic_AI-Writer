@@ -117,8 +117,8 @@ The ```python my_crew.kickoff()```  function is used to start the entire process
 
 Once the agents have completed their tasks, the generated content will be saved as markdown files:
 
-- `./artifects/blog-post.md`: Contains the blog post created by the **Blog Writer** agent.
-- `./artifects/linkedin-post.md`: Contains the LinkedIn post summary created by the **LinkedIn Post Creator** agent.
+- `./artifacts/blog-post.md`: Contains the blog post created by the **Blog Writer** agent.
+- `./artifacts/linkedin-post.md`: Contains the LinkedIn post summary created by the **LinkedIn Post Creator** agent.
 
 You can open these markdown files for further editing or directly publish them on your desired platform.
 
