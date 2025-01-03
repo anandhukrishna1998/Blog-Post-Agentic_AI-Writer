@@ -32,11 +32,11 @@ topic_researcher = Agent(
 )
 
 blog_writer = Agent(
-    role='Blog Writer',
-    goal='Write a comprehensive blog post from the only 1 article  provided by the Topic Researcher, covering all necessary sections',
+    role='Medium Blog Writer',
+    goal='Write a comprehensive Medium blog post from the only 1 article  provided by the Topic Researcher, covering all necessary sections for a good medium article ',
     verbose=True,
     memory=True,
-    backstory='Experienced in creating in-depth, well-structured blog posts that explain technical concepts clearly and engage readers from introduction to conclusion.',
+    backstory='Experienced in creating in-depth, well-structured medium blog posts that explain technical concepts clearly and engage readers from introduction to conclusion.',
     tools=[tool],
     llm=llm,
     allow_delegation=True
@@ -63,9 +63,9 @@ research_task = Task(
 )
 
 blog_writing_task = Task(
-    description="""Write a comprehensive blog post based on the 1 article  provided by the Topic Researcher.
+    description="""Write a comprehensive medium blog post based on the 1 article  provided by the Topic Researcher.
                    The article must include an introduction, step-by-step guides, and conclusion.
-                   The overall content must be about 400 words long.""",
+                   The overall content must be about 800 words long.""",
     expected_output="A markdown-formatted blog post",
     agent=blog_writer,
     tools=[tool],
@@ -90,7 +90,7 @@ my_crew = Crew(
 )
 
 # Input Topic
-topic_of_interest = 'gemini 2.0 multimodel'
+topic_of_interest = 'deepseek v3  a challenge to open AI  '
 result = my_crew.kickoff(inputs={'topic': topic_of_interest})
 
 print(result)

@@ -1,6 +1,6 @@
 # Blog-Post-Agentic_AI-Writer
 
-This project demonstrates how to use **CrewAI** in conjunction with **SerperDevTool** to automate content creation workflows. The project is structured to research a topic from the web, create a detailed blog post based on the research, and summarize the findings for a LinkedIn post. This process is powered by **Agents**, **Tasks**, and the **LLM** model for natural language processing.
+This project demonstrates how to use **CrewAI** in conjunction with **SerperDevTool** to automate content creation workflows. The project is structured to research a topic from the web, create a detailed blog post based on the research, and summarize the findings for a LinkedIn post. This process is powered by **Agents**, **Tasks**, and the **Gemini** model for natural language processing.
 
 ## Introduction
 
